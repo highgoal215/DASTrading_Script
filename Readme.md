@@ -47,9 +47,6 @@ Eg: 1 + 1 / 2 = 1 (not 1.5 as you might expect)
 
 Check the scripts dir for working examples
 
-For more detail on the way variables work in DAS check out this post:
-
-https://forums.bearbulltraders.com/topic/716-das-dynamically-calculate-shares-on-risk-or-risk-hot-key-configuration-updated-1213-v146/
 
 
 
@@ -110,14 +107,5 @@ Example: Print the DAS format
 # venv/Scripts/python dasscript.py -s sell_mid_with_risk_on_stop -p
 
 ROUTE = STOP; SShare = 100; StopType = Trailing; TrailPrice = Ask + Bid / 2; Price = StopPrice - TrailPrice; Share = 200 / Price; Share = ROUND; Price = Ask + Bid / 2; Price = ROUND2; ROUTE = Limit; SELL = Send; ROUTE = STOP; StopType = Market; TIF = DAY+; HANDINST = ANY; BUY = Send; ROUTE = Market;
-```
 
-
-Big Thanks to KyleK29 from forums.bearbulltraders.com for the inspiration behind this tool:
-
-https://forums.bearbulltraders.com/topic/716-das-dynamically-calculate-shares-on-risk-or-risk-hot-key-configuration-updated-1213-v146/
-
-
-#### TODOs:
-Implement a way to reuse a block of code within a script
 
