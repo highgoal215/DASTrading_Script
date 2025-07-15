@@ -39,8 +39,6 @@ For a full example check out `buy_mid_with_risk_on_stop.py` in the scripts direc
 Checkout the DAS Hotkey Command List pdf for info on the variables you can use in your script. It takes a some trial an error as not all the variables can be accessed all the time. 
 Also some variables won't accept some operations
 
-http://dastrader.com/documents/HotkeyCommandList.pdf
-
 To do complex math may need to break it down into simpler instructions. DAS only allows +-*/ and processed operations from left to right regardless of operation type.
 
 Eg: 1 + 1 / 2 = 1 (not 1.5 as you might expect)
